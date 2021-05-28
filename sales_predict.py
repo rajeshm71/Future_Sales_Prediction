@@ -163,5 +163,5 @@ def predict(n):
     except:
         print("Please enter number of days greater than zero")
 predictions=predict(int(args.n))
-if predictions:
+if predictions is not None:
     print(predictions)
